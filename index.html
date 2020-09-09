@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900|Open+Sans:300,400,600" rel="stylesheet">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/page.css?v=1.0.1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+		<script type="text/javascript" src="js/page.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<title>Tochito - Madden</title>
+		<style>
+			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+				border: 0 none;
+				font-size: 100%;
+				margin: 0;
+				outline: 0 none;
+				padding: 0;
+				vertical-align: baseline;
+				width: auto;
+			}  
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md fixed-top navbar-light">
+			<a class="navbar-brand" href="#cover"><img src="images/logo_tochito.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			  	<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Registro</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Calendario</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/section/reglamento.html">Reglamento</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Premios</a>
+					</li>
+			  	</ul>
+			</div>
+		</nav>
+		<div class="section" id="cover">
+			<div id="logo"><img src="images/torneo.png"></div>
+		</div>
+		<div class="section" id="contact">
+			<div class="inner">
+				<div class="section-title">REGISTRO</div>
+				<div class="title-line"></div>
+				<form id="form-register" action="../registerUser.php" method="post">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<input type="text" name="name" class="form-control" placeholder="*Nombre" class="data" required>
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" name="father_last_name" class="form-control" placeholder="*Apellido paterno" class="data" required>
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" name="mother_last_name" class="form-control" placeholder="Apellido materno" class="data">
+						</div>
+						<div class="form-group col-md-6">
+							<input placeholder="*Fecha de nacimiento" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birth">
+						</div>
+						<div class="form-group col-md-6">
+							<select class="form-control" name="console">
+								<option value="">*Consola</option>
+								<option value="PS">PS</option>
+								<option value="Xbox">Xbox</option>
+							</select>
+						</div>
+						<div class="form-group col-md-6">
+							<select class="form-control" name="version">
+								<option value="">*Versión de juego</option>
+								<option value="19">Madden 19</option>
+								<option value="20">Madden 20</option>
+							</select>
+						</div>
+						<div class="form-group col-md-6">
+							<select class="form-control" name="city">
+								<option value="">*Ciudad</option>
+								<option value="Aguascalientes">Aguascalientes</option>
+								<option value="Baja California">Baja California</option>
+								<option value="Baja California Sur">Baja California Sur</option>
+								<option value="Chiapas">Chiapas</option>
+								<option value="Chihuahua">Chihuahua</option>
+								<option value="Ciudad de México">Ciudad de México</option>
+								<option value="Coahuila">Coahuila</option>
+								<option value="Colima">Colima</option>
+								<option value="Durango">Durango</option>
+								<option value="Guanajuato">Guanajuato</option>
+								<option value="Hidalgo">Hidalgo</option>
+								<option value="Jalisco">Jalisco</option>
+								<option value="Estado de México">Estado de México</option>
+								<option value="Michoacán">Michoacán</option>
+								<option value="Morelos">Morelos</option>
+								<option value="Nayarit">Nayarit</option>
+								<option value="Nuevo León">Nuevo León</option>
+								<option value="Puebla-Tlaxcala">Puebla - Tlaxcala</option>
+								<option value="Querétaro">Querétaro</option>
+								<option value="Quintana Roo">Quintana Roo</option>
+								<option value="San Luis Potosí">San Luis Potosí</option>
+								<option value="Sonora">Sonora</option>
+								<option value="Tabasco">Tabasco</option>
+								<option value="Tamaulipas">Tamaulipas</option>
+								<option value="Veracruz">Veracruz</option>
+								<option value="Yucatán">Yucatán</option>
+							</select>
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" name="roster" class="form-control" placeholder="*Roster temporada pasada" class="data" required>
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" name="handle" class="form-control" placeholder="*gamertag/online-id" class="data" required>
+						</div>
+						<div class="form-group col-md-6">
+							<input type="mail" name="email" class="form-control" placeholder="*E-mail" class="data" required>
+						</div>
+						<button type="button" id="button-send">Enviar</button>
+					</div>
+					<div id="form-loader" style="text-align: center; margin-top: 10px; display: none;">
+	                    <img style="height: 50px;width: 50px;" src="images/loader.gif">
+	                </div>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-logo"><img src="images/logo_tochito.png"></div>
+				<p class="footer-text">
+					&copy; 2020 NFL Enterprises LLC. NFL and the NFL shield design are registered trademarks of the National Football League. The team name, logos and uniform designs are registered trademarks of the team indicated. All other NFL-related trademarks are trademarks of the National Football League. NFL footage &copy; NFL Productions LLC.
+				</p>
+				<div class="term-policy-content">
+					<a class="terms-policy" href="#">PRIVACY POLICY</a>
+					<a class="terms-policy" href="#">TERMS OF SERVICE</a>
+				</div>
+			</div>
+		</div>
+		<div id="boxes">
+		    <div id="dialog" class="window" style="background-color: #f5f5f5;  border-radius: 10px;">
+		        <div style="overflow: auto;margin-bottom: 5px;">
+		            <div><img class="logoNormal" src="/images/logo_mini_ng.png" style="margin: 0px auto;"></div>
+		            <div style="display:none;float: right"><a href="#" class="close"><img style="width: 35px" src="/images/close-btn.png"></a></div>
+		        </div>
+		        <div id="box-msg" style="clear: both;text-align: center;">¡Registro exitoso!</div>
+		        <div class="close" id="ok_btn">Aceptar</div>
+		    </div>
+		    <div id="mask"></div>
+		</div>
+	</body>
+</html>
