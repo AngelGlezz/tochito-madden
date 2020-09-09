@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 		<!-- JS, Popper.js, and jQuery -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/page.css?v=1.0.1">
@@ -50,7 +50,7 @@
 						<a class="nav-link" href="/section/reglamento.html">Reglamento</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Premios</a>
+						<a class="nav-link" href="/section/premios.html">Premios</a>
 					</li>
 			  	</ul>
 			</div>
@@ -62,7 +62,7 @@
 			<div class="inner">
 				<div class="section-title">REGISTRO</div>
 				<div class="title-line"></div>
-				<form id="form-register" action="../registerUser.php" method="post">
+				<form id="form-register" action="registerUser.php" method="post">
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<input type="text" name="name" class="form-control" placeholder="*Nombre" class="data" required>
@@ -74,7 +74,7 @@
 							<input type="text" name="mother_last_name" class="form-control" placeholder="Apellido materno" class="data">
 						</div>
 						<div class="form-group col-md-6">
-							<input placeholder="*Fecha de nacimiento" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birth">
+							<input placeholder="*Fecha de nacimiento" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birth" name="birth">
 						</div>
 						<div class="form-group col-md-6">
 							<select class="form-control" name="console">
@@ -140,7 +140,7 @@
 		</div>
 		<div class="footer">
 			<div class="footer-container">
-				<div class="footer-logo"><img src="images/logo_tochito.png"></div>
+				<div class="footer-logo"><img src="images/logo_nfl.png"></div>
 				<p class="footer-text">
 					&copy; 2020 NFL Enterprises LLC. NFL and the NFL shield design are registered trademarks of the National Football League. The team name, logos and uniform designs are registered trademarks of the team indicated. All other NFL-related trademarks are trademarks of the National Football League. NFL footage &copy; NFL Productions LLC.
 				</p>
@@ -153,7 +153,7 @@
 		<div id="boxes">
 		    <div id="dialog" class="window" style="background-color: #f5f5f5;  border-radius: 10px;">
 		        <div style="overflow: auto;margin-bottom: 5px;">
-		            <div><img class="logoNormal" src="/images/logo_mini_ng.png" style="margin: 0px auto;"></div>
+		            <div><img class="logoNormal" src="images/logo_mini_ng.png" style="margin: 0px auto;"></div>
 		            <div style="display:none;float: right"><a href="#" class="close"><img style="width: 35px" src="/images/close-btn.png"></a></div>
 		        </div>
 		        <div id="box-msg" style="clear: both;text-align: center;">¡Registro exitoso!</div>

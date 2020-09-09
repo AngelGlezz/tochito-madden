@@ -94,10 +94,10 @@
                     
                     echo json_encode($return);
                     
-                }
             }else{
                 $return->error = 'Invalid data';
                 echo json_encode($return);
             }
+        }
         
 ?>

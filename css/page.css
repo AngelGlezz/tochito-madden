@@ -23,6 +23,10 @@
 	border-bottom: 1px solid #fff;
 }
 
+.navbar-toggler-icon {
+	background-image: url(../images/iconmenu.png)!important;
+}
+
 .section {
 	background-size: cover;
 	background-color: #eeeeee;
@@ -241,6 +245,91 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-top: 30px;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+#title-reward {
+	font-size: 43px;
+	margin: 80px 0px 40px 0px;
+	font-weight: bold;
+}
+
+.item-reward {
+	background-color: #fff;
+	position: relative;
+	height: 300px;
+}
+
+#first-place {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 30px;
+}
+
+.number-reward {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+
+.icon-reward {
+	position: absolute;
+	width: 160px;
+	height: 133px;
+	margin: auto;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.number-reward img, .icon-reward img {
+	width: 100%;
+	max-height: 100%;
+}
+
+.number-text-reward {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	font-size: 26px;
+	margin: auto;
+	top: 0px;
+	right: 0px;
+	bottom: -190px;
+	left: 0px;
+}
+
+.text-reward {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 23px;
+	font-size: 20px;
+	font-weight: bold;
+	margin: auto;
+	top: 0px;
+	right: 0px;
+	bottom: -250px;
+	left: 0px;
+}
+
+.other-place {
+	width: 48%;
+	float: left;
+}
+
+#second-place {
+	margin-right: 4%;
+}
+
+.other-place .number-text-reward {
+	font-size: 20px;
+	color:#d6d4d4;
 }
 
 @media (max-width: 768px) {
